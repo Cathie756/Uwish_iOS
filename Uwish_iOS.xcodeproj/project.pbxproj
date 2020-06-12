@@ -16,9 +16,9 @@
 		4547D73C2491DD2500525782 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547D73B2491DD2500525782 /* Common.swift */; };
 		4547D73F2491DD2E00525782 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547D73D2491DD2E00525782 /* NetworkController.swift */; };
 		4547D7402491DD2E00525782 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547D73E2491DD2E00525782 /* Mission.swift */; };
-		4547D7422491DD3E00525782 /* MissionPostedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547D7412491DD3E00525782 /* MissionPostedViewController.swift */; };
 		4547D7442491DD5500525782 /* MissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547D7432491DD5500525782 /* MissionTableViewCell.swift */; };
 		4547D7462491E22D00525782 /* MissionTakenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547D7452491E22D00525782 /* MissionTakenViewController.swift */; };
+		457D3E9B24936B1500D39F55 /* MissionPostedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457D3E9A24936B1500D39F55 /* MissionPostedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +33,9 @@
 		4547D73B2491DD2500525782 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		4547D73D2491DD2E00525782 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		4547D73E2491DD2E00525782 /* Mission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
-		4547D7412491DD3E00525782 /* MissionPostedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MissionPostedViewController.swift; path = ../../../../Documents/iOSProject/UWTest/UWTest/MissionPostedViewController.swift; sourceTree = "<group>"; };
 		4547D7432491DD5500525782 /* MissionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionTableViewCell.swift; sourceTree = "<group>"; };
 		4547D7452491E22D00525782 /* MissionTakenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTakenViewController.swift; sourceTree = "<group>"; };
+		457D3E9A24936B1500D39F55 /* MissionPostedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionPostedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +73,9 @@
 				4547D73B2491DD2500525782 /* Common.swift */,
 				4547D73D2491DD2E00525782 /* NetworkController.swift */,
 				4547D73E2491DD2E00525782 /* Mission.swift */,
+				457D3E9A24936B1500D39F55 /* MissionPostedViewController.swift */,
 				4547D7392491DD0200525782 /* CreateMissionTableViewController.swift */,
 				4547D7452491E22D00525782 /* MissionTakenViewController.swift */,
-				4547D7412491DD3E00525782 /* MissionPostedViewController.swift */,
 				4547D7432491DD5500525782 /* MissionTableViewCell.swift */,
 				4547D7372491DCD700525782 /* Main.storyboard */,
 				4547D72C2491DC8C00525782 /* Assets.xcassets */,
@@ -158,11 +158,11 @@
 			files = (
 				4547D7402491DD2E00525782 /* Mission.swift in Sources */,
 				4547D73F2491DD2E00525782 /* NetworkController.swift in Sources */,
+				457D3E9B24936B1500D39F55 /* MissionPostedViewController.swift in Sources */,
 				4547D7462491E22D00525782 /* MissionTakenViewController.swift in Sources */,
 				4547D7442491DD5500525782 /* MissionTableViewCell.swift in Sources */,
 				4547D73C2491DD2500525782 /* Common.swift in Sources */,
 				4547D7242491DC8900525782 /* AppDelegate.swift in Sources */,
-				4547D7422491DD3E00525782 /* MissionPostedViewController.swift in Sources */,
 				4547D7262491DC8900525782 /* SceneDelegate.swift in Sources */,
 				4547D73A2491DD0300525782 /* CreateMissionTableViewController.swift in Sources */,
 			);
