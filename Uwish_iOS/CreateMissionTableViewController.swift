@@ -22,6 +22,8 @@ class CreateMissionTableViewController: UITableViewController, UITextFieldDelega
     @IBOutlet var cityPickerToolBar: UIToolbar!
     @IBOutlet var cityPickerView: UIPickerView!
     
+    @IBOutlet var imageButtons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         titleTextField.delegate = self
@@ -106,6 +108,27 @@ class CreateMissionTableViewController: UITableViewController, UITextFieldDelega
         }
         budgetHintLabel.text = message
     }
+    
+    @IBAction func uploadImage(_ sender: UIButton) {
+        
+        let alertController = UIAlertController(title: "照片上傳", message: "請選擇圖片來源", preferredStyle: .alert)
+        let camera = UIAlertAction(title: "相機", style: .default) { (alertAction) in
+            print("camera")
+        }
+        
+        let album = UIAlertAction(title: "相簿選取", style: .default) { (alertAction) in
+            print("album")
+        }
+        
+        alertController.addAction(camera)
+        alertController.addAction(album)
+        
+        self.present(alertController, animated: true, completion: nil)
+        
+    }
+    
+    
+    
     
     // MARK: - Table view data source
 

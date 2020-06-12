@@ -480,11 +480,18 @@
                                                     <rect key="frame" x="20" y="40" width="180" height="110"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" backgroundImage="pick_img"/>
+                                                    <connections>
+                                                        <action selector="checkBudget:" destination="Oy2-aM-c65" eventType="touchUpInside" id="8Og-5u-J0G"/>
+                                                        <action selector="uploadImage:" destination="Oy2-aM-c65" eventType="touchUpInside" id="b3O-vn-oU7"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwO-Sc-8r9">
                                                     <rect key="frame" x="214" y="40" width="180" height="110"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" backgroundImage="pick_img"/>
+                                                    <connections>
+                                                        <action selector="uploadImage:" destination="Oy2-aM-c65" eventType="touchUpInside" id="ts8-AG-sws"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -533,6 +540,8 @@
                         <outlet property="detailTextView" destination="wWV-Wf-W0t" id="PKg-D3-XbC"/>
                         <outlet property="dueDatePicker" destination="OCU-aG-jw3" id="4Kg-az-HkE"/>
                         <outlet property="titleTextField" destination="qdB-cV-7W4" id="APR-HW-Kyk"/>
+                        <outletCollection property="imageButtons" destination="aXn-T0-rpm" collectionClass="NSMutableArray" id="O2g-4c-bza"/>
+                        <outletCollection property="imageButtons" destination="AwO-Sc-8r9" collectionClass="NSMutableArray" id="m9o-jQ-iSl"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W86-lg-p4B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -594,7 +603,7 @@
                     </connections>
                 </pickerView>
             </objects>
-            <point key="canvasLocation" x="1842" y="-1378"/>
+            <point key="canvasLocation" x="1761" y="-1378"/>
         </scene>
         <!--接案紀錄 List-->
         <scene sceneID="0Qg-9c-tzO">
@@ -740,6 +749,7 @@
                                             <outlet property="titleLabel" destination="85Y-90-O14" id="oUi-gN-aJn"/>
                                             <outlet property="userImageView" destination="QZz-fw-Huv" id="Uob-nZ-V8i"/>
                                             <outlet property="userNameLabel" destination="MbP-1A-Bu2" id="PF8-DI-uFf"/>
+                                            <segue destination="D9V-Pc-o6m" kind="show" id="oML-OI-BbP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -762,6 +772,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNn-DI-9Fd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1764" y="-601"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8iN-mo-6Y0">
+            <objects>
+                <viewController id="D9V-Pc-o6m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KNv-nv-iXG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZYt-Jt-icy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="wqc-nw-YJH"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="wrt-Zx-C28"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zbW-uB-45w"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1aR-67-3uG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mow-ba-HuV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2598.5507246376815" y="-601.33928571428567"/>
         </scene>
         <!--接案紀錄 Nav-->
         <scene sceneID="dlB-pS-JzH">
